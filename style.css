@@ -1,0 +1,34 @@
+/*
+This is standard CSS stuff when you're setting up a website
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/*
+I created a container to keep all our items in
+This will make it easier down the road when it comes to formatting things
+"margin: 0 auto" makes everything centered on the page
+*/
+
+#container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+This changes the size of the actual map
+I chose the width and height kind of randomly, I just thought it looked good
+It can be changed later
+*/
+
+#map {
+    height: 500px;
+    width: 800px;
+    margin: 0 auto;
+}
