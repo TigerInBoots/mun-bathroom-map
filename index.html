@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style.css" rel="stylesheet">
+
+    <!--
+        This is the stylesheet of the map
+        You need it in order for the map to actually work
+    -->
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <!--
+        Same thing here, execpt it's for the map's JavaScript file
+    -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>MUN Bathrooms</h1>
+
+    <!--
+        To make the map appear, it's just this one line
+        All of the actual editing is done in either the CSS or JavaScript files
+    -->
+
+        <div id="map"></div>
+
+    </div>
+
+    <form action="formreceiver.html" method="post">
+        X-coordinate: <input type="text" name="x-coord" onkeyup="formChanged()" onchange="formChanged()"/>
+        <br>
+        Y-coordinate: <input type="text" name="y-coord" onkeyup="formChanged()" onchange="formChanged()"/>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--
+        This links to the actual JavaScript file that we use to edit the map properties
+        It needs to be in the "body" section to work
+    -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
